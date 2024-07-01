@@ -1,0 +1,20 @@
+@charset "UTF-8";
+#ul01{
+    list-style-type: square;
+}
+/* Para usar simbolos personalizados da emojiIcons por exemplo é nescessário usar '\codigo' na propriedade list-style-type */
+#ul02{
+    list-style-type: '\2705';
+}
+#ul03{
+    list-style-type: circle;
+}
+#ol01{
+    list-style-type: decimal-leading-zero;
+}
+#ol02{
+    list-style-type: upper-roman;
+}
+#ol03{
+    list-style-type: upper-latin;
+}

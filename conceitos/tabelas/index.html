@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h3>Criando Tabela de Redes Para Exemplo</h3>
+    <table border="1" width="80%">
+        <!-- Table Row -->
+        <tr>
+            <!--th => Table Header-->
+            <th>Rede</th>
+            <th>Ips-Válidos</th>
+            <th>BroadCast</th>
+        </tr>
+        <tr>
+            <!-- Table Data -->
+            <td>192.168.25.0</td>
+            <td>192.168.25.1 - 192.168.25.30</td>
+            <td>192.168.25.31</td>
+        </tr>
+        <tr>
+            <!-- Table Data -->
+            <td>192.168.25.32</td>
+            <td>192.168.25.33 - 192.168.25.62</td>
+            <td>192.168.25.63</td>
+        </tr>
+        
+        <tr>
+            <!-- Table Data -->
+            <td>192.168.25.64</td>
+            <td>192.168.25.65 - 192.168.25.94</td>
+            <td>192.168.25.95</td>
+        </tr>
+    </table>
+    <br>
+    <h3>Produtos</h3>
+    <table border="1" width="90%">
+        <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>Notebook</td>
+            <td>R$ 4000.00</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>Tablet</td>
+            <td>R$ 1800,00</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>Smartphone c</td>
+            <td>R$ 1200,00</td>
+        </tr>
+        <!-- Rowspan altera a quatidade de linhas que um conteudo irá ocupar -->
+        <tr>
+            <td rowspan="2" >Desconto</td>
+            <td colspan="2">Cupom Amo10 - R$ 10,00</td>
+        </tr>
+        <!-- colspan altera a quatidade de colunas que um conteudo irá ocupar -->
+        <tr>
+            <td colspan="2">Cupom Amo12 - R$ 12,00</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td colspan="2">R$ 6978,00</td>
+        </tr>
+    </table>
+</body>
+</html>
