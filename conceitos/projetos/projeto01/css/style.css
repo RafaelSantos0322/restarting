@@ -17,21 +17,27 @@ div {
     background-color: #383F5D;
 }
 header {
+    width: 80%;
     margin-top: 10px;
     display: inline;
     text-align: end;
     min-height: 100px;
 }
 header img {
+    padding-left: 50px;
     margin: 15px 7px;
     padding-bottom: 20px;
 }
 nav {
     margin-top: -70px;
     margin-bottom: 40px; 
-    padding-right: 20px ;
+    padding-right: 40px ;
+}
+nav a{
+    font-size: .9em;
 }
 main {
+    width: 80%;
     background-color: white;
     margin: auto;
 }
