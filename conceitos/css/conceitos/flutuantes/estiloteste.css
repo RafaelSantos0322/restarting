@@ -1,0 +1,26 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+section {
+    margin-top: 10px;
+    background-color: brown;
+    padding: 7px;
+}
+img{
+    width: 240px;
+    height: 240px;
+    float: left;
+    margin: 5px;
+
+}
+section br {
+    clear: both;
+}
+a:hover {
+    font-size: 1em;
+    background-color: brown;
+    color: white;
+    padding: 4px;
+    text-decoration: underline;
+}
