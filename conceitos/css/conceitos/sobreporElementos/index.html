@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobreposição de Elementos</title>
+    <style>
+        .conteudo01{
+            border: 1px solid orangered;
+            background-color: burlywood;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 4;
+            text-align: end;
+        }
+        .conteudo02{
+            border: 1px solid rgb(110, 45, 21);
+            background-color:chocolate;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            text-align: end;
+            z-index: 3;
+        }
+        .conteudo03{
+            border: 1px solid rgb(110, 45, 21);
+            background-color:rgb(97, 69, 49);
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            z-index: 3;
+            text-align: end;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteudo01">
+        conteudo01
+    </div>
+    <div class="conteudo02">
+        conteudo02
+    </div>
+    <div class="conteudo03">
+        conteudo03
+    </div>
+</body>
+</html>
