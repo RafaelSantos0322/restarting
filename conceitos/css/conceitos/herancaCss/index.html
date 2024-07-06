@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança e EspecificidadesCss</title>
+    <style>
+        /* 
+                Precedência [0] 
+            ( Quando há !important ) 
+        */
+        h2{
+            background-color: saddlebrown !important;
+        }
+        /* Precedência [2] */
+        h2.gray{
+            background-color: gray;
+        }
+        /* Precedência [1] */
+        h2#yellow{
+            background-color: yellow;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2>Halo Word</h2>
+</body>
+</html>
