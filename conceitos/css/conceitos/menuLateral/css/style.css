@@ -1,0 +1,30 @@
+@charset "UTF-8";
+* {
+    padding: 0px;
+    margin: 0px;
+}
+ul{
+    list-style-type: none;
+
+}
+li {
+    background: url(../img/seta.png) no-repeat center left;
+    width: 200px;
+    height: 40px;
+    margin: 3px;
+    /* Usado para deixa a altura do texto do tamanho da caixa, o centralizando */
+    line-height: 40px;
+}
+li > a {
+    /* Background padrão caso a imagem de fundo por algum motivo não esteja disponível */
+    background: #f7b600 url(../img/menu.png) no-repeat;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding-left: 40px;
+}
+li > a:hover, .selecionado {
+    background-color: #f99200;
+    background-position: right bottom;
+    color: white;
+}
