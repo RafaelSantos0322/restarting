@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    list-style: none;
+    float: left;
+    background: url(../img/fundo-horizontal.png) repeat-x;
+}
+ul li {
+    
+    padding: 10px 2em;
+    float: left;
+    background: url(../img/divisor.png) repeat-y;
+}
+li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    
+}
+li a:hover, .selecionado{
+    background: none;
+    background: aqua;
+}
