@@ -8,12 +8,13 @@ ul {
     background: url(../img/fundo-horizontal.png) repeat-x;
 }
 ul li {
-    
-    padding: 10px 2em;
     float: left;
     background: url(../img/divisor.png) repeat-y;
 }
+/* Não colocar padding onde não precisa */
 li a {
+    line-height: 2em;
+    padding: 0 20px;
     display: block;
     color: white;
     text-decoration: none;
@@ -21,5 +22,5 @@ li a {
 }
 li a:hover, .selecionado{
     background: none;
-    background: aqua;
+    background-color: aqua;
 }
