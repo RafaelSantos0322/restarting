@@ -23,4 +23,5 @@ li a {
 li a:hover, .selecionado{
     background: none;
     background-color: aqua;
+    color: rgb(41, 105, 188);
 }
