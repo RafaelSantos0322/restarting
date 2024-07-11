@@ -1,0 +1,30 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none;
+}
+
+ul {
+    float: left;
+    margin-left: 10px;
+
+}
+ul li{
+    float: left;   
+}
+ul a{
+    border: 1px solid rgba(0, 0, 0, 0.184);
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: 4em;
+    background-color: chocolate;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+}
+ul a:hover, a.selecionado{
+    background-color: rgb(255, 204, 0);
+    color: chocolate;
+    font-weight: bold;
+}
