@@ -1,0 +1,22 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+}
+fieldset{
+    font-weight: bold;
+}
+label {
+    display: block;
+    cursor: pointer;
+}
+label.lembra{
+    display: inline;
+}
+input.contato {
+    width: 30%;
+    
+}
+textarea {
+    width: 30%;
+    height: 10em;
+    
+}
