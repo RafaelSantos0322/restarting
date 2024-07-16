@@ -1,0 +1,46 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background: url(../img/fundo.png) repeat-x top left;
+}
+header{ 
+    margin: auto;
+    width: 60%;
+    text-align: initial;
+    height: 250px;
+}
+
+header img{
+    margin-top: 30px;
+}
+nav {
+    margin-top: 20px;
+
+}
+nav a{
+    padding: 10px 8px;
+    text-decoration: none;
+    float: left;
+    color: white;  
+    background: rgb(226, 32, 32) url(../img/divisor.png) repeat-y right;  
+}
+header img#planeta {
+    display: block;
+    margin-top: -80px;
+}
+main {
+    width: 70%;
+    margin: auto;
+}
+section#main_section{
+    width: 30%;
+    float: left;
+}
+aside {
+    width: 25%;
+    float: left;
+}
+
