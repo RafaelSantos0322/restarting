@@ -2,9 +2,10 @@
     width: 300px;
     height: 300px;
     background-color: burlywood;
+    transition: all 5s;
 }
 #caixa:hover{
     width: 500px;
     background-color: rgb(64, 15, 112);
-    transition: all 5s;
+  
 }
