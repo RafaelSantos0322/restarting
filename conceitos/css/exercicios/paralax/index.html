@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <style>
+        /* Obrigatório usar a altura 100% tanto no body como no html */
+        body,html{
+            margin: 0;
+            font: 16px "Lato", sans-serif;
+            height: 100%;
+            color: #777;
+            
+        }
+        .conteudo{
+            color: #777;
+            background-color: white;
+            text-align: justify;
+            padding: 50px 80px;
+        }
+        .conteudo h3{
+            color: black;
+            text-transform: uppercase;
+            text-align: center  ;
+        }
+        .caixa1, .caixa2, .caixa3, .caixa4 {
+            border: 1px solid red;
+            height: 100%;
+            opacity: .7;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+            position: relative;
+
+        }
+        .caixa1{
+            background-image: url(img/imagem1.jpg);
+            background-size: cover;
+            
+            
+        }
+        .caixa2{
+            background-image: url(img/imagem2.jpg);
+            background-size: cover;
+        }
+        .caixa3{
+            background-image: url(img/imagem3.jpg);
+            background-size: cover;
+        }
+        .caixa4{
+            background-image: url(img/imagem4.jpg);
+            background-size: cover;
+        }
+        .conteudo-titulo{
+            position: absolute;
+            width: 100%;
+            background-color: transparent;
+            left: 0;
+            top: 45%;
+            font-size: 3em;
+            text-transform: uppercase;
+            
+        }
+        span.conteudo-titulo{
+            text-align: center;
+            background-color: #777;
+            color: white;
+            padding: 5px 10px;
+        }
+    </style>
+<body>
+    <div id="conteudo1" class="caixa1">
+        <span class="conteudo-titulo">conteudo1</span>
+    </div>
+    <div id="conteudo2" class="conteudo">
+        <h3>conteudo2</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A veniam temporibus quod eligendi perspiciatis accusamus similique, sapiente nesciunt ipsam eius vitae velit, ipsum qui! Optio aliquid cupiditate quo velit quis.</p>
+    </div>
+    <div class="caixa2" >
+        <span class="conteudo-titulo">conteudo3</span>
+        
+    </div>
+    <div class="caixa3" >
+        <span class="conteudo-titulo">conteudo4</span>
+    </div>
+    <div class="caixa4" class="conteudo-titulo">
+        <span class="conteudo-titulo">conteudo5</span>
+    </div>
+</body>
+</html>
