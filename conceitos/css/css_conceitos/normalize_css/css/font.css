@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Fira ;
+    src: url(../font/FiraCode-Regular.ttf);
+}
+label{
+    font-family: Fira;
+}
+button{
+    font-family: Fira;
+}
