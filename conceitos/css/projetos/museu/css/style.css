@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+:root{
+    --varbgHeader: #2C291F;
+    --varClNav: #A76D13;
+    --varClNavHover: #82a713;
+}
+*{
+    font-family: "Lucida Grande", "Lucida Sans Unicode" Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+header{
+    background: var(--varbgHeader) url(../img/fundo.png) repeat-x;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    min-width: 900px;
+    min-height: 200px;    
+}
+header > h1{
+    margin: 0px;
+    padding: 30px 20px;
+    float: left;   
+}
+nav{
+    display: flex;
+    flex-grow: 2;
+    height: 100px;
+}
+nav > ul{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+nav > ul > li{
+    padding-left: 40px;
+    list-style: none;
+    font-size: .7em;
+}
+nav a{
+    text-decoration: none;
+    color: var(--varClNav);
+}
+nav a:hover{
+    color: var(--varClNavHover);
+}
+main{
+    z-index: 3;
+    margin: auto;
+    width: 900px;
+    margin-top: -100px;
+}
+article#img-principal{
+    float: left;
+    min-width: 300px;
+    max-width: 590px;
+    min-height: 300px;
+}
+aside#img-depoimento{
+    float: right;
+    min-width: 100px;
+    max-width: 290px;
+    min-height: 300px;
+}
+section#conteudo-principal{
+    float: left;
+    max-width: 590px;
+    text-align: start;
+
+}
+#video{
+    float: left;
+    border: 1px solid red;
+    margin-right: 10px;
+}
+#video h4{
+    font-size: .8em;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+    color: var(--varClNavHover);
+}
+#mapa{
+    float: left;
+    border: 1px solid red;
+}
+#mapa h4{
+    font-size: .8em;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+    color: var(--varClNavHover);
+}
+
