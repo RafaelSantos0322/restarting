@@ -4,6 +4,7 @@
     --varbgHeader: #2C291F;
     --varClNav: #A76D13;
     --varClNavHover: #82a713;
+    --varBgAside: #CCC7B4;
 }
 *{
     font-family: "Lucida Grande", "Lucida Sans Unicode" Arial, sans-serif;
@@ -58,7 +59,7 @@ article#img-principal{
     float: left;
     min-width: 300px;
     max-width: 590px;
-    min-height: 300px;
+    min-height: 300px; 
 }
 aside#img-depoimento{
     float: right;
@@ -66,28 +67,91 @@ aside#img-depoimento{
     max-width: 290px;
     min-height: 300px;
 }
+#barra-lateral{
+    float: right;
+    min-width: 100px;
+    max-width: 290px;
+    min-height: 300px;
+}
+#reserva{
+    float: left;
+    padding: 10px;
+    background: var(--varBgAside);
+    height: 210px;
+    box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.177);   
+}
+#reserva h4{
+    color:var(--varClNav);
+    
+}
+#reserva input{
+    margin: 60px 0px;
+    font-size: .7em;
+}
+#reserva button{
+    display: block;
+    font-size: 1em;
+    padding: 5px 10px;
+    margin: auto;
+    margin-top: 00px;
+    background-color: var(--varClNav);
+    color: white;
+}
+#galeria{
+    float: left;
+    padding: 10px;
+    background:#d1d0cb;
+    box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.177);   
+    margin-top: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+#galeria img{
+    background: url(../img/fundo-foto.png) no-repeat;
+    padding: 19px 16px;
+    margin-left: 5px;
+}
 section#conteudo-principal{
     float: left;
     max-width: 590px;
     text-align: start;
 
 }
-#video{
+.cardLeft{
+    padding: 2px;
     float: left;
-    border: 1px solid red;
-    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    background-color: rgb(237, 230, 230);
+    box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.177);
 }
-#video h4{
+.cardLeft h4{
     font-size: .8em;
     padding: 2px 5px;
     margin-bottom: 5px;
     color: var(--varClNavHover);
 }
-#mapa{
-    float: left;
-    border: 1px solid red;
+.cardLeft li{
+    text-decoration: none;
+    width: 265px;
+    list-style: none;
+    font-size: .8em;
+    padding: 10px;
 }
-#mapa h4{
+.cardLeft li a{
+    text-decoration: none;
+}
+.cardLeft li a:hover{
+    color: var(--varClNav);
+}
+.cardRight{
+    float: left;
+    margin-left: 5px;
+    padding: 2px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.177);    background-color: rgb(237, 230, 230);
+}
+.cardRight h4{
     font-size: .8em;
     padding: 2px 5px;
     margin-bottom: 5px;
