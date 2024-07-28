@@ -10,77 +10,44 @@
 
         <title>Elementos Flutuantes - bootstrap</title>
     </head>
-    <body style="width: 800px; margin: auto; margin-bottom: 80px; padding: 16px;">
+    <body style="width: 800px; margin: auto; margin-bottom: 80px; padding: 16px; color: gray; background-color: maroon;">
 
-        <h1>Título conteúdo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aliquid. Atque placeat officia perspiciatis dolores voluptatum quibusdam sit eligendi debitis recusandae, nam voluptates iste quis beatae similique, quas aperiam mollitia.</p>
-        <h1>Título conteúdo</h1> 
-        <!-- Colar no topo (sticky)  Ao rolar o item ficará fixo no topo-->
-        <ul class="list-inline bg-warning sticky-top">
-            <li class="list-inline-item">Home</li>
-            <li class="list-inline-item">Sobre nós</li>
-            <li class="list-inline-item">Galeria</li>
-            <li class="list-inline-item">Contato</li>
-        </ul>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aliquid. Atque placeat officia perspiciatis dolores voluptatum quibusdam sit eligendi debitis recusandae, nam voluptates iste quis beatae similique, quas aperiam mollitia.</p>
-        <h1>Título conteúdo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aliquid. Atque placeat officia perspiciatis dolores voluptatum quibusdam sit eligendi debitis recusandae, nam voluptates iste quis beatae similique, quas aperiam mollitia.</p>
-        <h1>Título conteúdo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aliquid. Atque placeat officia perspiciatis dolores voluptatum quibusdam sit eligendi debitis recusandae, nam voluptates iste quis beatae similique, quas aperiam mollitia.</p>
-        <h1>Título conteúdo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aliquid. Atque placeat officia perspiciatis dolores voluptatum quibusdam sit eligendi debitis recusandae, nam voluptates iste quis beatae similique, quas aperiam mollitia.</p>
-        <h1>Título conteúdo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aliquid. Atque placeat officia perspiciatis dolores voluptatum quibusdam sit eligendi debitis recusandae, nam voluptates iste quis beatae similique, quas aperiam mollitia.</p>
-        <h1>Título conteúdo</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, aliquid. Atque placeat officia perspiciatis dolores voluptatum quibusdam sit eligendi debitis recusandae, nam voluptates iste quis beatae similique, quas aperiam mollitia.</p> 
+        <!-- Classes para formatação de texto   -->
+        <h1 class="text-primary">Texto primary</h1>
+        <h1 class="text-secondary">Texto secondary</h1>
+        <h1 class="text-success">Texto success</h1>
+        <h1 class="text-info">Texto info</h1>
+        <h1 class="text-warning">Texto warning</h1>
+        <h1 class="text-danger">Texto danger</h1>
+        <h1 class="text-light">Texto light</h1>
+        <h1 class="text-dark">Texto dark</h1>
+        <h1 class="text-white">Texto white</h1>
+        <h1 class="text-black-50">Texto black 50</h1>
+        <h1 class="text-white-50">Texto black</h1>
         <br><br>
-
-
-
-
-
-        <!-- Elementos Flutuantes --> 
-        <div style="border: 1px solid gray; padding: 5px;" class="bg-warning clearfix"> <!--  clearfix age como um clear-both -->
-            <div class="float-left bg-success">Float Left</div>
-            <div class="float-right bg-success">Float Right</div>
-
-        </div>
+        <a href="#" class="text-primary">Link primary</a><br>
+        <a href="#" class="text-secondary">Link secondary</a><br>
+        <a href="#" class="text-success">Link success</a><br>
+        <a href="#" class="text-info">Link info</a><br>
+        <a href="#" class="text-warning">Link warning</a><br>
+        <a href="#" class="text-danger">Link danger</a><br>
+        <a href="#" class="text-light">Link light</a><br>
+        <a href="#" class="text-dark">Link dark</a><br>
+        <a href="#" class="text-white">Link white</a><br>
         <br><br>
-        <!-- Posicionamento fixo - fixed-top e fixed-bottom -->
-        <h1 class="fixed-bottom bg-warning">Título de Conteúdo fixo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id assumenda voluptatibus explicabo provident non iusto modi officiis odio fugit? Quas reprehenderit eum tempora illum at esse maiores obcaecati molestias harum?</p>
-        <br><br>
-        <!-- 
-                            Float Responsivo -
-            class: "float-tamanho-alinhamento"
-            tamanho: sm(small ) - md (midium) - lg(large) - xl (extra large)
-            alinhamento: left;  right
-        -->
-        <div class="float-sm-right">
-            &GreaterSlantEqual; 576*
-        </div> <!-- small -->
-        <div class="float-md-right">
-            &GreaterSlantEqual; 768*
-        </div>  <!--  midium-->     
-        <div class="float-lg-right">
-            &GreaterSlantEqual; 992*
-        </div>  <!-- large  -->
-        <div class="float-xl-right">
-            &GreaterSlantEqual; 1200*
-        </div> <!--  extra large--> 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita ea eius. Perferendis quos quidem corrupti velit nostrum quas, magni laboriosam vel iusto odit iure delectus amet ducimus sint rem?</p>
-        <br><br>
-
-        <!-- Colar no topo (sticky)  Ao rolar o item ficará fixo no topo-->
-        <ul class="list-inline bg-warning sticky-top">
-            <li class="list-inline-item">item-01</li>
-            <li class="list-inline-item">item-02</li>
-            <li class="list-inline-item">item-03</li>
-            <li class="list-inline-item">item-04</li>
-        </ul>
+        <h1 class="bg-primary">Fundo primary</h1>
+        <h1 class="bg-secondary">Fundo secondary</h1>
+        <h1 class="bg-success">Fundo success</h1>
+        <h1 class="bg-info">Fundo info</h1>
+        <h1 class="bg-warning">Fundo warning</h1>
+        <h1 class="bg-danger">Fundo danger</h1>
+        <h1 class="bg-light">Fundo light</h1>
+        <h1 class="bg-dark">Fundo dark</h1>
+        <h1 class="bg-white">Fundo white</h1>
         
+        <br><br>
 
-    
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
