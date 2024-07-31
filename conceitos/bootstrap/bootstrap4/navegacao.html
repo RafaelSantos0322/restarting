@@ -23,9 +23,9 @@
                             flex-column
         -->
 
-        <h2 class="bg-success">Navegação Simple / Abas </h2>
+        <h2 class="bg-info">Navegação Simple / Abas </h2>
             <ul class=" nav nav-tabs justify-content-end">
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a href="" class="nav-link active ">Home</a>
                 </li>
                 <li class="nav-item">
@@ -41,40 +41,179 @@
                     <a href="" class="nav-link">Contato</a>
                 </li>
             </ul>
+        
+        <!--                Nota Sobre NavBar
+            navbar => informa que é uma barra de navegação;
+            navbar-expand-sm => controla o alinhamento;
+            navbar-brand => usado para informar que é o logo;
+            navbar-nav => Usado para informar que aquele é o menu de navegação;
+            nav-item => Informa que é um item da navegação;
+            nav-link active => Alem de indicar que é um link ele informa que está ativo no momento.
+            ml-auto => Ao setar isso o conteudo é jogado para a esquerda
 
+
+
+        -->
         <h2 class="bg-warning">Barra de Navegação Simples</h2>
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-sm navbar-light ">
             <!-- Logo Marca -->
-            <a href="#">Logo Marca</a>
+            <a class="navbar-brand" href="#">Logo Marca</a>
             <!-- Navegação -->
-            <ul class=" navbar-nav nav-tabs justify-content-end">
+            <ul class=" navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="" class="nav-link active ">Home</a>
+                    <a href="#" class="nav-link active ">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Noticias</a>
+                    <a href="#" class="nav-link">Noticias</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Jogos</a>
+                    <a href="#" class="nav-link">Jogos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Saude</a>
+                    <a href="#" class="nav-link">Saude</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Contato</a>
+                    <a href="#" class="nav-link">Contato</a>
                 </li>
             </ul>
         </nav>
 
-        <h2>Barra de Navegação Com  Menu Responsivo</h2>
-        
+        <h2 class="bg-dark text-light">Barra de Navegação Com  Menu Responsivo</h2>
+        <nav class="navbar navbar-expand-md navbar-light  ">
+            <!-- Logo Marca -->
+            <a class="navbar-brand" href="#">Logo Marca</a>
+    
+            <!--                Menu Hamburguer Responsivo
+            navbar-toggler => Informa que quando a tela diminuir o botão que esconderá o menu será mostrado;
+            navbar-toggler-icon => Coloca o icone na tela
+            navbar-expand-md => sm/md/lg/xl parametrizam em que tamanho o efeito começará a ser aplicado
+            collapse navbar-collapse => Usado para esconder os itens
+            data-toggle="collapse"  => Informa qual o efeito ocorrerá
+            data-target="#nav-target" => Quem será afetado (exibido e escondido) pela alteração/clique 
+
+            -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+                <span class="ml-auto navbar-toggler-icon"></span>
+                menu
+            </button>
+            <!-- Navegação toggler só funciona se estiver dentro de uma div-->
+            <div class="collapse navbar-collapse" id="nav-target">
+                <ul class=" navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Saude</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         
         <h2>Barra de Navegação Com Formulário</h2>
-        
+        <nav class="navbar navbar-expand-md navbar-light  ">
+            <!-- Logo Marca -->
+            <a class="navbar-brand" href="#">Logo Marca</a>
+    
+            <!--                Menu Hamburguer 
+            
+            -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target=".nav-target2">
+                <span class="ml-auto navbar-toggler-icon"></span>
+                menu
+            </button>
+            <!-- Navegação toggler só funciona se estiver dentro de uma div-->
+            
+            <div class="nav-target2 collapse navbar-collapse" >
+                <ul class=" navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Saude</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Formulário -->
+            <div class="nav-target2 collapse navbar-collapse">
+                <form  class="form-inline">
+                <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar..." class="form-control">
+                <button class="btn btn-outline-success">ok</button>
+                </form>
+            </div> 
+        </nav>
         
         <h2>Barra de Navegação Com Menu Dropdown</h2>
 
-
+        <nav class="navbar navbar-expand-md navbar-light  ">
+            <!-- Logo Marca -->
+            <a class="navbar-brand" href="#">Logo Marca</a>
+    
+            <!--                Menu Hamburguer 
+            
+            -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target=".nav-target">
+                <span class="ml-auto navbar-toggler-icon"></span>
+                menu
+            </button>
+            <!-- Navegação toggler só funciona se estiver dentro de uma div-->
+            
+            <div class="nav-target collapse navbar-collapse" >
+                <ul class=" navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active ">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Noticias</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            Jogos
+                        </a>
+                        <div class="dropdown-menu"  >
+                            <a class="dropdown-item" href="#">
+                                Jogo-01
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                Jogo-02
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                Jogo-03
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                Jogo-04
+                            </a>
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Saude</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Pode ser usado o alinhamento => Fixed-top; Fixed-botom; sticky -->
 
         
 
