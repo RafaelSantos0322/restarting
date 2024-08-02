@@ -1,0 +1,18 @@
+@media (max-width: 575.98px) {  
+    #titulo_principal{
+        font-size: 35px;
+    }
+    #paragrafo_principal{
+        font-size: 13px;
+    }
+    #lojas{
+        font-size: 12px;
+        text-align: center;
+    }
+    .a_footer{
+        font-size: 10px;
+
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
