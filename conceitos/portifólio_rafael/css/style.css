@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root{
+    --var--background: rgb(3, 3, 93);
+}
+html, body{
+    height: 100%;
+}
+.fa-html5{
+    color: #e75c22;
+}
+
+.fa-css3{
+    color: #2D53E5;
+}
+.fa-js{
+    color: #F7E025;
+}
+.fa-bootstrap{
+    color: #533B78;
+}
+.fa-git{
+    color: #F7F7F7;
+}
+.fa-github{
+    color: #000;
+}
+#logo{
+    font-family: "Lobster", sans-serif;
+}
+#h1_apresentação{
+    font-family: "Lobster", sans-serif;
+}
+header{
+    background: var(--var--background);
+}
+main{
+    background: var(--var--background);
+    height: 90%;
+}
+#sobre-mim>h3{
+    background-image: linear-gradient(to right, var(--var--background), white);
+    color: white;
+    padding: 5px;
+}
+#sobre-mim>p{
+    text-indent: 40px;
+    text-align: justify;
+}
+@media (max-width: 575.98px) { 
+
+}
