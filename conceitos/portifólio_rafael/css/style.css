@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root{
-    --var--background: rgb(3, 3, 93);
+    --var--background: #03035d;
 }
 html, body{
     height: 100%;
@@ -20,7 +20,7 @@ html, body{
     color: #533B78;
 }
 .fa-git{
-    color: #F7F7F7;
+    color: #3F2E00;
 }
 .fa-github{
     color: #000;
@@ -38,15 +38,45 @@ main{
     background: var(--var--background);
     height: 90%;
 }
-#sobre-mim>h3{
+#h2_portfolio{
+    background-color:  var(--var--background);
+    color: white;
+    font-family: "Lobster", sans-serif;;
+}
+.subtitle>h3{
     background-image: linear-gradient(to right, var(--var--background), white);
     color: white;
     padding: 5px;
 }
-#sobre-mim>p{
+.subtitle>p{
     text-indent: 40px;
     text-align: justify;
 }
-@media (max-width: 575.98px) { 
+footer{
+    background-color: var(--var--background);
+}
 
+a{
+    text-decoration: none;
+    
+}
+@media (max-width: 575.98px) { 
+    #h3_ola{
+        font-size: 25px;
+    }
+    #h1_apresentação{
+        font-size: 3.5em;
+    }
+    .subtitle>h3{
+        font-size: 25px;
+    }
+    #skills-list{
+        padding: 15px;
+    }
+    .fa-brands{
+        font-size: 1.8em;
+    }
+    .p-lista{
+        font-size: 12px;
+    }
 }
