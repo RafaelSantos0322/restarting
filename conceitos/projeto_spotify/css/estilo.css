@@ -1,0 +1,74 @@
+/* A aplicação de várias imagens cria uma camada sendo que conforme colocamos a imagens elas terão a mesma posição, sendo a primeira a ser declarada a que ficará por cima das outras OBS.: É importantissímo o uso da , para separar os conteúdos*/
+html, body, #cta-apresentacao{
+    height: 100%;
+
+}
+
+body {
+    background: url(../imagens/capa.png),
+                url(../imagens/ruido.png),  
+                linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    font-family:  Helvetica, Arial, sans-serif;
+}
+.cabecalho-transparente{
+    background: rgba(0, 0 , 0, 0.6);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: aquamarine;
+}
+.botao-gratis{
+    background: #7c26f8;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.botao-gratis:hover{
+    color: rgb(220, 220, 220);
+    filter: brightness(0.8);
+    transition: all .7s;
+}
+
+main{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-attachment: fixed;
+}
+.albuns{
+    margin: 10px 0px;
+}
+@media (max-width: 575.98px) {  
+    #h1-cta{
+        font-size: 3.4em;
+        padding: 10px 5px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    #h1-cta{
+        font-size: 4.4em;
+        padding: 10px 5px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #h1-cta{
+        font-size: 5.4em;
+        padding: 10px 5px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    #h1-cta{
+        font-size: 6.4em;
+        padding: 10px 5px;
+    }
+}
+@media (min-width: 1200px) { 
+    #h1-cta{
+        font-size: 7.4em;
+        padding: 10px 5px;
+    }
+}
