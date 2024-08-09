@@ -1,7 +1,8 @@
 /* A aplicação de várias imagens cria uma camada sendo que conforme colocamos a imagens elas terão a mesma posição, sendo a primeira a ser declarada a que ficará por cima das outras OBS.: É importantissímo o uso da , para separar os conteúdos*/
 html, body, #cta-apresentacao{
     height: 100%;
-
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     background-attachment: fixed;
     font-family:  Helvetica, Arial, sans-serif;
 }
+/* Header / Nav */
 .cabecalho-transparente{
     background: rgba(0, 0 , 0, 0.6);
 }
@@ -21,6 +23,7 @@ body {
 .navbar-dark .navbar-nav .nav-link:hover {
     color: aquamarine;
 }
+/* Primeira Apresentação  */
 .botao-gratis{
     background: #7c26f8;
     color: white;
@@ -33,42 +36,183 @@ body {
     transition: all .7s;
 }
 
+#apresentacao{
+    padding: 5px 10px;
+}
+/* Conteúdo Principal */
 main{
     background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-attachment: fixed;
+    width: 100%;
 }
+
+/* Conteúdo Secundário */
 .albuns{
     margin: 10px 0px;
+}
+
+#conteudo-secundario{
+    margin-top: 20px;
+    padding: 20px 1px; 
+}
+.texto-roxo{
+    color: #7c26f8;
+} 
+/* Recursos */
+#recursos{
+    color: white;
+    margin: 20px;
+}
+.texto-azul{
+    color: aquamarine;
+    
+} 
+.rotacionar{
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    padding-left: 85px;
+    margin-top: 75px;
+}
+/* Rodapé */
+footer{
+    background-color: rgba(0, 0, 0);
+    padding: 50px 0px 20px 0;
+    position: relative;
+}
+footer h4{  
+    color: #919496;
+    font-size: .9em;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+footer .navbar-nav a{
+    color: white;
+    font-size: .8em;
+}
+footer .navbar-nav a:hover{
+    color: #9bf0e1;
+    text-decoration: none;
+}
+footer img{
+    margin-top: 10px;
 }
 @media (max-width: 575.98px) {  
     #h1-cta{
         font-size: 3.4em;
         padding: 10px 5px;
     }
+    #apresentacao {
+        padding: 5px auto;
+        margin: 15px;
+    }
+    #apresentacao h2, #conteudo-secundario h2{
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+    #apresentacao h3, #conteudo-secundario h3{
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    #apresentacao p, #conteudo-secundario p{
+        font-size: .8em;
+        text-align: justify;
+        text-indent: 20px;
+    }
+    #recursos{
+        margin: 15px;
+    }
 }
+
 @media (min-width: 576px) and (max-width: 767.98px) { 
     #h1-cta{
         font-size: 4.4em;
         padding: 10px 5px;
     }
+    #apresentacao {
+        padding: 5px auto;
+        margin: 15px;
+    }
+    #apresentacao h2, #conteudo-secundario h2 {
+        font-weight: bold;
+        font-size: 2em;
+    }
+    #apresentacao h3, #conteudo-secundario h3{
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    #apresentacao p, #conteudo-secundario p{
+        font-size: 1.0em;
+        text-align: justify;
+        text-indent: 20px;
+    }
+    #conteudo-secundario p{
+        margin-right: 20px;
+    }
 }
+
 @media (min-width: 768px) and (max-width: 991.98px) {
     #h1-cta{
         font-size: 5.4em;
         padding: 10px 5px;
     }
+    #apresentacao h2, #conteudo-secundario h2{
+        font-weight: bold;
+        font-size: 2.2em;
+        letter-spacing: -0.05em;
+    }
+    #apresentacao h3, #conteudo-secundario h3{
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+    #apresentacao p, #conteudo-secundario p{
+        font-size: 1.0em;
+        text-align: justify;
+        text-indent: 20px;
+    }
 }
+
+
 @media (min-width: 992px) and (max-width: 1199.98px) { 
     #h1-cta{
         font-size: 6.4em;
         padding: 10px 5px;
     }
+    #apresentacao h2, #conteudo-secundario h2{
+        font-weight: bold;
+        font-size: 2.8em;
+        letter-spacing: -0.05em;
+    }
+    #apresentacao h3, #conteudo-secundario h3{
+        font-weight: bold;
+        font-size: 2em;
+    }
+    #apresentacao p, #conteudo-secundario p{
+        font-size: 1.4em;
+        text-align: justify;
+        text-indent: 20px;
+    }
 }
+
 @media (min-width: 1200px) { 
     #h1-cta{
         font-size: 7.4em;
         padding: 10px 5px;
+    }
+    #apresentacao h2, #conteudo-secundario h2{
+        font-weight: bold;
+        font-size: 3em;
+        letter-spacing: -0.05em;
+    }
+    #apresentacao h3, #conteudo-secundario h3{
+        font-weight: bold;
+        font-size: 2.5em;
+    }
+    #apresentacao p, #conteudo-secundario p{
+        font-size: 1.8em;
+        text-align: justify;
+        text-indent: 20px;
     }
 }
