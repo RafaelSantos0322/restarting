@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com formulario</title>
+    <script>
+        function acao1(){
+            alert("Evento Disparado")
+        }
+    </script>
+</head>
+<body onresize="console.log('Tamanho da tela alterado' )">
+    <!-- 
+    É importante usar os () para que a função seja invocada! 
+        onfocus=>  Ocorre quando o item é clicado ou recebe de alguma maneira uma certa atenção do usuário.
+        onblur=> Contrário de onfocus, é quando o foco já não é mais o elemento.
+        onchange => Ocorre quando muda o estado do item.
+
+    --> 
+        <input onfocus="console.log('Ação disparada')"  onblur="console.log('deixou de ter atenção')"type="text"/>
+    
+        <select onchange="console.log('Estado foi modificado')">
+            <option> --selecione-- </option>
+            <option value="1"> Primeira Opção </option>
+            <option value="2"> Segunda Opção </option>
+        </select>
+</body>
+</html>

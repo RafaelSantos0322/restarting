@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Valores</title>
+    <script>
+        var primeiroNumero = parseInt( prompt("Digite um número!"))
+        
+        var operacao = prompt("Digite a operação desejada( Soma, Subtração, Multiplicação ou Divisão).").toLowerCase()
+        
+        var segundoNumero =  parseInt(prompt("Digite outro número!"))
+
+
+        function calcular(n1, o, n2){
+            switch (o) {
+                case "soma":
+                    document.write(`O Resultado é: ${n1 + n2}`)
+                    break;
+                case "subtração":
+                    document.write(`O Resultado é: ${n1 - n2}`)
+                    break;
+                case "multiplicação":
+                    document.write(`O Resultado é: ${n1 * n2}`)
+                    break;
+                    case "multiplicação":
+                    document.write(`O Resultado é: ${n1 / n2}`)
+                    break;
+                default:
+                    alert("Digite uma operação válida")
+                    break;
+            }
+    }
+    calcular(primeiroNumero, operacao, segundoNumero)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

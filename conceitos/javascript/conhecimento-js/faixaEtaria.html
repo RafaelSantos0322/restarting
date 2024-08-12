@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faixa Etária</title>
+    <script>
+        let idade = prompt("Digite sua idade!")
+        let idadeNumber = parseInt(idade)
+        
+        if((idadeNumber >= 0 ) && (idadeNumber < 15)){
+            document.write("<h5>Criança</h5>")
+        }else if((idadeNumber >= 15 ) && (idadeNumber < 30)){
+            document.write("<h5>Jovem</h5>")
+        }else if((idadeNumber >= 30 ) && (idadeNumber < 60)){
+            document.write("<h5>Adulto</h5>")
+        }else if((idadeNumber >= 60 ) && (idadeNumber < 130)){
+            document.write("<h5>Idoso</h5>")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

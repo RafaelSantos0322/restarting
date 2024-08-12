@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com mouse</title>
+    <script>
+        function acao(){
+            alert("Função Disparada")
+        }
+    </script>
+</head>
+<body>
+    <!-- 
+    É importante usar os () para que a função seja invocada! 
+        onclick => Quando ocorre 1 clique
+        ondblclick => Quando ocorre 2 cliques
+        onmouseup => Ocorre quando  o botão do mouse é solto após ser pressionado;
+        onmouseover => Quando o mouse passa por cima do item;
+        onmouseover => Quando o mouse sai de cima do item;
+
+
+    -->
+    <div onmouseout="acao()" style="background-color: #ccc; height: 200px; width: 200px;"></div>
+</body>
+</html>

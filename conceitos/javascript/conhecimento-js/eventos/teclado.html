@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com Teclado</title>
+    <script>
+        function acao1(){
+            alert("Evento Disparado")
+        }
+    </script>
+</head>
+<body>
+    <!-- 
+    É importante usar os () para que a função seja invocada! 
+        onkeydown => Quando a tecla é pressionada
+        onkeyup=> Ocorre quando  o botão é solto após ser pressionado;
+        onkeypress=> Ocorre quando  o botão é pressionado por alguns instantes(obs.: só funciona se a tecla representar um caracter por exemplo na tecla ctrol não funciona);
+
+    -->
+    <input onkeyup="acao1()" type="text">
+</body>
+</html>

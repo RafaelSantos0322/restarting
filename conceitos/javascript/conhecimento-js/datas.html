@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datas</title>
+    <script>
+        // var data = new Date()
+
+        // document.write(data.toString())
+        // data.setDate(data.getDate() + 30)
+        // document.write("<br>")
+        // document.write(data.toString())
+        
+        // document.write("<br><hr/>")
+
+        
+        // data.setMonth(data.getMonth() - 1)
+        // document.write("<br>")
+        // document.write(data.toString())
+
+        var data1 = new Date(1, 7, 2024)
+        var data2 = new Date(1, 8, 2024)
+
+        var millisegundo_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+
+        var millisegundo_por_dia = (1*24*60*60*1000)
+
+        document.write(Math.ceil( millisegundo_entre_datas / millisegundo_por_dia))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
