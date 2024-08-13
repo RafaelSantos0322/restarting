@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrip - DOM</title>
+    <script>
+        function distribuiCaracter(){
+            // Recupera o valor digitado
+            let caracter = document.getElementById('input_usuario').value
+            // Limpa o campo de entrada
+            document.getElementById('input_usuario').value = ""
+            // Limpar a espaços em branco
+            caracter.trim()
+            switch(caracter){
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    document.getElementById('numeros').value += caracter
+                    break;
+                default:
+                    document.getElementById('letras').value += caracter
+                    
+            }
+        }
+        function limpar(){
+            document.getElementById('numeros').value = ""
+            document.getElementById('letras').value = ""
+        }
+    </script>
+</head>
+<body>
+    <input 
+        type="text" 
+        name="" 
+        id="input_usuario" 
+        placeholder="Digite um caracter aqui!"
+        onkeyup="distribuiCaracter()"
+    >
+    <hr>
+    <span>Letra</span>
+    <input type="text" id="letras" disabled>
+    <span>Número</span>
+    <input type="text" id="numeros" disabled>
+
+    <button onclick="limpar()">Limpar</button>
+</body>
+</html>

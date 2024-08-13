@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - DOM</title>
+    <style>
+        .classe01 {
+            background-color: red;
+            color: white;
+            height: 30px;
+            width: 300px;
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 30px;
+        }
+        .classe02{
+            background-color: green;
+            color: white;
+            height: 30px;
+            width: 300px;
+            margin-bottom: 20px;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+    <script>
+        function mudarClasse(){
+            let classe = document.getElementById('mensagem').className
+            if(classe == 'classe01'){
+                console.log(classe)
+                document.getElementById('mensagem').className = 'classe02'
+
+            } else {
+                console.log(classe)
+                document.getElementById('mensagem').className =  'classe01'
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div id="mensagem" class="classe01"> modificando a classe do elemento</div>
+    <button type="button" onclick="mudarClasse()">Mudar Classe</button>
+</body>
+</html>

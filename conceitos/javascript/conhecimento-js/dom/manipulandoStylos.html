@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrip - DOM </title>
+    <script>
+        function MudarCor(corDeFundo){
+            document.getElementById('caixa').style.backgroundColor = corDeFundo 
+            // Caso a propriedade a ser alterada seja  composta Ex.: background-image; será transformada em camel Case ficando assim backgroundImage.
+        }
+    </script>
+</head>
+<body>
+    <h2>Manipulando Estilos</h2>
+    <p>Clique nos botões abaixo para alterar a cor da caixa</p>
+
+    <button 
+        style="background-color: red;" 
+        onclick="MudarCor('#ff0000')"
+    > Vermelho 
+    </button>
+    <button
+        style="background-color: rgb(0, 255, 0);" 
+        onclick="MudarCor('#00ff00')"
+    > Verde 
+    </button>
+    <button
+        style="background-color: blue;" 
+        onclick="MudarCor('#0000ff')"
+    > Azul 
+    </button>
+
+    <div style="background-color: #ccc; height: 250px; width: 250px; margin-top: 20px;" id="caixa"></div>
+
+    
+</body>
+</html>
