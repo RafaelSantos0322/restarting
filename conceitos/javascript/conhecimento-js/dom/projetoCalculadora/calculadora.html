@@ -97,7 +97,6 @@
     </div>
     <script>
         function calcular( acao, valor){
-            console.log(acao, valor)
             if (acao === 'acao') {
                 if (valor === 'c') {
                     document.getElementById('visor').value = ""
@@ -109,9 +108,10 @@
                 }
                 if(valor === '='){
                     // eval é usado para que o interpretador do javascript leia como uma expressão númerica; 
-                    let valor_campo = eval( document.getElementById('visor').value)
-                    
-                    document.getElementById('visor').value = valor_campo
+                    if(document.getElementById('visor').value != 0){
+                        let valor_campo = eval( document.getElementById('visor').value)
+                        document.getElementById('visor').value = valor_campo
+                    }
                 }
             } else if(acao === 'valor') {
                 document.getElementById('visor').value += valor
