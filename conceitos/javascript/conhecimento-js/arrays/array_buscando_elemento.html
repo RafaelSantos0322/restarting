@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Buscando Elemento</title>
+    <script>
+        let lista_frutas = Array()
+        lista_frutas[0] = 'uva'
+        lista_frutas[1] = 'banana'
+        lista_frutas[2] = 'abacate'
+        lista_frutas[3] = 'melância'  
+        lista_frutas[4] = 'jaca'
+        
+        let pesquisarLista = (lista, item) => {
+            let index = lista.indexOf(item);
+            if (index === -1){
+                return console.log('Item não encontrado')
+            }else{
+                return console.log(`O item ${item} foi encontrado na posição ${index}`)
+            }
+        }
+        pesquisarLista(lista_frutas, 'banana')
+            
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

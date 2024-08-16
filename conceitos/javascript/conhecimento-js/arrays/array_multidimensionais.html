@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Multidimencional</title>
+    <script>
+        // Arrays Multidimencionais são arrays que aponta para outros arrays
+        // Criei um array de forma comum
+        let carro = Array()
+        // Aqui eu crio e coloco no array outro array que ocupará o indice [0]
+        carro.push(Array('Pireli', 'Marca A', 'Marca B'))
+        // Aqui crio um posição especifica que poderá ser acessada pelo console.log(carro['montadora'][0]) => 'ferrari' por exemplo.
+        carro['montadora'] = Array('ferrari', 'lamborguini')
+        // Outra forma de criar e incluir na lista
+        carro['montadora'][2] = 'Audi'
+        console.log(carro)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
