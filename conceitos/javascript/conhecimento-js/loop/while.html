@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Loops</title>
+    <script>
+        // Criei uma lista
+        let lista_frutas = Array('Banana', 'Maçã', 'Pera', 'Uva', 'Morango', 'Melância', 'Graviola', 'Jaca').sort()
+        // Criei um indice que recebe 0
+        let i = 0;
+        
+        // Como condição eu coloquei que enquanto o indice fosse menor que o tamanho do array fruta (8)
+        while(i<lista_frutas.length){
+            // Escrevesse na tela cada item e desse uma quebra de linha
+            document.write(`${lista_frutas[i]} <br>`)
+            // Interasse atualizando o valor variavel indice i+=1
+            i++
+        }
+        console.log(lista_frutas)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
