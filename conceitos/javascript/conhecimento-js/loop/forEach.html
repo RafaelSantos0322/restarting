@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach - Loops - JavaScript</title>
+    <script>
+        let lista_frutas = Array('Banana', 'Maça', 'Pera', 'Uva', 'Goiaba', 'Acerola', 'Jaca')
+        // O forEach Espera receber uma funcão com os seguintes parâmentros valor, indice e  array
+        
+        // Valor => Conteúdo de cada elemento do array
+        // Indice => posição do elemento
+        // Array => Lista completa do array 
+        lista_frutas.forEach(function(valor, index, array){
+            document.write(`Index: ${index} | Valor: ${valor} | Array: ${array} <br>`)
+            if(valor == 'Uva'){
+                lista_frutas[index] = "Maycon"
+            }
+        })
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

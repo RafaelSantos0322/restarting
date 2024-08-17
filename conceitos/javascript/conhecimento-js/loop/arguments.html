@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Arguments</title>
+    <script>
+        function soma(){
+            let resultado = 0
+            // Para acessar cada item eu uso forIn;
+            for(numero in arguments){
+                // Logo apos eu faço a soma da lista de itens;
+                resultado += arguments[numero]
+            }
+            console.log(resultado)   
+        }
+        soma(2, 45, 9, 4.5)
+        soma(7, 7, 7, 7)
+        soma(5, 5, 5, 5)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
