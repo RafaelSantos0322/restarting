@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de Erro</title>
+    <script>
+        let videos =  Array()
+        videos[1] = Array()
+        videos[1]['nome'] = 'Black Cover'
+        videos[1]['categoria'] = 'Anime'
+
+        function getVideo(video){
+            // Ideia do try pode ser: Tente acessar
+            try{
+                // lógica
+                // Recuperando dados https
+                console.log(video[0]['nome'])
+            }catch(e){
+                // Dentro do catch podemos resolver o erro ou fazer com que o erro não quebre a nossa aplicação.
+                // Aqui podemos criar uma lógica que enviará ao servidor informações sobre o erro
+                console.log(e)
+                console.log("Desculpe nos, estamos trabalhando para resolver o erro!!!")
+                throw new Error('Houve um erro estamos trabalhando nisso agora')
+            }finally{
+                console.log('Problema está sendo corrigido')
+            }
+            console.log('funcionou até o final')
+        }
+        getVideo(videos)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
