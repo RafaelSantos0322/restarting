@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Mata Mosquito</title>
+    <script src="jogo.js"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body onresize="recuperarTamanhoTela()">
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1"  src="img/coracao_cheio.png" alt="vida">
+            <img id="v2" src="img/coracao_cheio.png" alt="vida">
+            <img id="v3" src="img/coracao_cheio.png" alt="vida">
+        </div>
+        <div class="cronometro"> 
+            <h3>Tempo restante <span id="time"></span></h3>
+        </div>
+    </div>
+
+
+    <script>
+        
+        document.getElementById('time').innerHTML = contador
+
+        let cronometro = setInterval(function(){
+            contador--
+            document.getElementById('time').innerHTML = contador
+            if(contador < 0){
+                window.location.href = 'vitoria.html'
+            }
+        }, 1000)
+        
+        let chamarImagem = setInterval(function () {
+            posicaoImagemRandomica()
+            if(contador === 0){
+                clearInterval(chamarImagem)
+            }
+            
+        }, tempoAparecimento)
+    </script>
+</body>
+</html>

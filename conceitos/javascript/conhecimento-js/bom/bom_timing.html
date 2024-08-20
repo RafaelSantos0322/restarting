@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - JavaScript - timing</title>
+    <script>
+        // Após 2 segundos da página ser carrega ele exibirá o "funcionou"
+        setTimeout(function(){document.write('Funcionou <br>')},2000)
+        // A cada 1 segundo eu vou imprimindo e decrementando a variavel intervalo até que a mesma chegue em 0 onde limpo o padrão que a faria repetir.
+        let intervalo = 100
+        var cronometro = setInterval(function(){
+                            document.write(`${intervalo} <br>`) 
+                            intervalo--
+                            if(intervalo === -1){
+                                clearInterval(cronometro)
+                            }
+                        }, 1000)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

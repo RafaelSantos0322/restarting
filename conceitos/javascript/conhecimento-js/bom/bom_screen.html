@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOM - SCREEN - JavaScript</title>
     <script>
-        
+        // availHeight ou availWidth pegam a altura e largura da tela retirando o espaço destinado a barra do windows.
+        let altura = window.screen.availHeight
+        let largura = window.screen.availWidth
+        document.write(altura + '<br>')
+        document.write(largura + '<br>')
+        if(largura > 500){
+            // Quando eu quiser pegar o body posso pegar diretamente
+            document.body.style.backgroundColor = '#ccc'
+        }
     </script>
 </head>
 <body>
