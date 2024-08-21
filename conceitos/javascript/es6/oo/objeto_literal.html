@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Literal</title>
+    <script>
+        let produtoLiteral = {
+            descricao: 'geladeira',
+            preco: 1900,
+            verDescricao: function(){
+                console.log(`${this.descricao} por apenas ${this.preco}`)
+            }
+        }
+        produtoLiteral.verDescricao()
+
+        // No JavaScript Usamos o objeto literal para recuperar os dados de um formulário pois não há necessidade de criar uma classe uma vez que passaremos um único item. formulário (vai para) -> servidor
+
+        // recuperamos os dados -> montamos um objeto literal
+            // objeto literal -> transformamos em JSON -> enviamos pelo http -> para o Servidor -> que fará o armazenamento.       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

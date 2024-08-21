@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OO Encapsulamento</title>
+    <script>
+        class Tv {
+            constructor(){
+                this._canais = Array(3, 4, 7, 10)
+                this.valume = 5
+                this._canalAtual = 4
+            }
+                get canalAtual(){
+                    return this._canalAtual
+                }
+                set canalAtual(canal){
+                    // Confirmo se o canal existe
+                    if(this._canais.indexOf(canal) !== -1){
+                        return this._canalAtual = canal
+                    }
+                }
+        }
+
+        let tv = new Tv()
+        console.log(tv.canalAtual)
+        tv.canalAtual = 3
+        console.log(tv.canalAtual)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

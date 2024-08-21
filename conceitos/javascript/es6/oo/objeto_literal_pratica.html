@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando Objeto literal</title>
+    
+</head>
+<body>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required>
+        <br>
+        <label for="idade">idade</label>
+        <input type="number" name="idade" id="idade" required>
+        <br>
+        <label for="sexo">Homem</label>
+        <input type="radio" class="sexo" name="sexo" id="Homem" value="Homem">
+        <label for="sexo">Mulher</label>
+        <input type="radio" class="sexo" name="sexo" id="Mulher" value="Mulher">
+        <br><br>
+        <label for="profissao">Profissão</label>
+        <input type="text" name="profissao" id="profissao" required>
+        <br>
+        <button onclick="recuperDados()"> Enviar</button>
+    
+
+        <script>
+        let listaDados = Array()
+        let objeto
+        function recuperDados(){  
+            let nome = document.getElementById('nome').value
+            let idade =  document.getElementById('idade').value
+            let homem = document.getElementById('Homem')
+            let mulher = document.getElementById('Mulher')
+            let sexo = homem.checked ? 'homem' : 'mulher'
+            let profissao = document.getElementById('profissao').value
+
+            guardaDados(nome, idade, sexo,  profissao)
+            
+        }
+        function guardaDados(nome, idade, sexo, profissao){
+                objeto = {
+                    nome,
+                    idade,
+                    sexo,
+                    profissao,
+                    apresentar(){
+                        console.log(`Olá meu nome é ${nome} tenho ${idade} de idade, sou ${sexo} e minha profissão é ${profissao}`)
+                    }
+
+                }
+                listaDados.push(objeto)
+                consultaLista()
+        }
+            
+        function consultaLista(){
+            console.log(listaDados[0])
+            console.log(listaDados[0].apresentar())
+        }
+
+        </script>
+</body>
+</html>

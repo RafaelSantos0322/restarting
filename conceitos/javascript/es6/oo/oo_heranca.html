@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança - OO </title>
+    <script>
+        class Animal{
+            constructor(){
+                this.cor = 'cor'
+                this.tamanho = 'Grande'
+            }
+            dormir(){
+                console.log('zzzzzzzz')
+            }
+        }
+        // Não precisa chamar o new Class()
+        class Cachorro extends Animal{
+            constructor(){
+                super()
+                this.orelhas = ''
+            }
+            correr(){
+                console.log('Correuuuu')
+            }
+            rosnar(){
+                console.log('ruuuuruuuu')
+            }   
+        }
+        class Passaro extends Animal{
+            constructor(){
+                super()
+                this.bico = 'pequeno'
+            }
+            voar(){
+                console.log('Voou')
+            }
+        }
+
+        // Acontecerá que ele vai pegar as caracteristicas de passaro e animal também
+        class Papagaio extends Passaro{
+            constructor(){
+                super()
+                this.bico = 'Médio'
+                this.sabeFalar = true
+            }
+            dizerOi(){
+                console.log('Oii')
+            }
+        }
+
+        let Elvis = new Papagaio()
+        console.log(Elvis)
+        Elvis.dizerOi()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

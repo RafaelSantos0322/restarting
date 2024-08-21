@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OO - ABSTRAÇÃO</title>
+    <script>
+        // Modelo da entidade / objeto
+        class ContaBancaria{
+            constructor(valorSaque){
+            //Atibutos:
+                this.agencia = 1075
+                this.numeroConta = 8351125
+                this.saldo = 50
+                this.limite = 450
+            }
+            // Metódos:
+            depositar(valorDeposito){
+                this.saldo += valorDeposito
+                document.write('Depositado realizado. Favor conferir novo saldo da conta! <br>')
+            }
+            sacar(valorSaque){
+                if(valorSaque > this.saldo){
+                    document.write(`Valor do saque maior que saldo<br>`)
+                } else{
+                    this.saldo -= valorSaque
+                    document.write(`Saque realizado. Favor conferir novo saldo da conta!<br>`)
+                }
+            }
+
+            consultarSaldo() {
+                // é obrigatorio passar o this para poder acessar 
+                document.write(`Seu saldo é R\$ ${this.saldo.toFixed(2)} <br>`)    
+            }
+        }
+        
+        let bradescoRafael = new ContaBancaria()
+        
+        bradescoRafael.sacar(21)
+
+        bradescoRafael.depositar(21.9)
+        bradescoRafael.consultarSaldo()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

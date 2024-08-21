@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática Polimofismo</title>
+    <script>
+        class Animal{
+            constructor(cor,tamanho){
+                this.cor = cor
+                this.tamanho = tamanho
+            }
+            dormir(){
+                console.log('Dormiu')
+            }
+        }
+        class Passaro extends Animal{
+            constructor(tamanhoBico, cor, tamanho){
+                super(cor, tamanho)
+                this.bico = tamanhoBico
+            }
+            voar(){
+                console.log('Voou')
+            }
+        }
+        // Como  o atributo cor pertence a classe pai Animal para que eu consiga setarlá eu preciso passar para o super(comoParametro)
+        class Papagaio extends Passaro{
+            constructor(tamanhoBico, cor, tamanho, sabeFalar,){
+                super(tamanhoBico, cor, tamanho)
+                
+                this.sabeFalar = sabeFalar
+                
+            }
+            dizerOi(owner){
+                console.log(`Oi ${owner}`)
+            }
+            
+        }
+        class Avestruz extends Passaro{
+            constructor(tamanhoBico, cor, tamanho, sabeFalar){
+                super( tamanhoBico,cor, tamanho)            
+            }
+            entrerrarCabecaNaTerra(){
+                console.log('Enterrou a cabeça na terra!')
+            }
+            // Para exercer o polimorfismo em javascript basta declarar a propriedade e o método que você deseja alterar o valor e reatribuir.
+            voar(){
+                console.log('Avestruz não voa')
+            }
+        
+        }
+
+        let Elvis = new Papagaio('Médio', 'Azul' ,25, true )
+        Elvis.dizerOi('Pedro')
+        console.log(Elvis)
+
+        let Elvestruz = new Avestruz('Médio', 'branco e preto' , 15000, false,)
+        Elvestruz.voar()
+        console.log(Elvestruz)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

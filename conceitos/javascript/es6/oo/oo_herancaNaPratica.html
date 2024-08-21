@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática Herança</title>
+    <script>
+        class Animal{
+            // E setar na classe pai que desejo receber esse parâmetro
+            constructor(cor,tamanho){
+                this.cor = cor
+                this.tamanho = tamanho
+            }
+            dormir(){
+                console.log('Dormiu')
+            }
+        }
+        class Passaro extends Animal{
+            constructor(tamanhoBico, cor, tamanho){
+                super(cor, tamanho)
+                this.bico = tamanhoBico
+            }
+            voar(){
+                console.log('Voou')
+            }
+        }
+        // Como  o atributo cor pertence a classe pai Animal para que eu consiga setarlá eu preciso passar para o super(comoParametro)
+        class Papagaio extends Passaro{
+            constructor(tamanhoBico, cor, sabeFalar, tamanho){
+                super(tamanhoBico, cor, tamanho)
+                
+                this.sabeFalar = sabeFalar
+                
+            }
+            dizerOi(owner){
+                console.log(`Oi ${owner}`)
+            }
+            
+        }
+
+        let Elvis = new Papagaio('Médio', 'Azul' ,true, 25)
+        Elvis.dizerOi('Pedro')
+        console.log(Elvis)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
