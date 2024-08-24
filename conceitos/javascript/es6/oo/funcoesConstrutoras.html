@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Construtoras</title>
+    <script>
+    //     let carro = function( cor, modelo){
+    //     this.cor = cor
+    //     this.modelo = modelo
+    //     this.velocidadeAtual = 180
+    //     this.velocidadeMaxima = 200
+
+
+    //     this.acelerar = function (){
+    //         let novaVelocidade = this.getVelocidadeAtual() + 3
+    //         this.setVelocidade(novaVelocidade)
+    //     }
+    //     this.getVelocidadeAtual = function(){
+    //         return this.velocidadeAtual
+    //     }
+    //     this.setVelocidade = function(velocidade){
+    //         if(velocidade <= this.velocidadeMaxima){
+    //             console.log( this.velocidadeAtual = velocidade)
+    //         }else{
+    //             this.velocidadeAtual = this.velocidadeMaxima
+    //             console.log(`Você alcançou a velocidade máxima que é ${this.velocidadeMaxima}`)
+    //         }
+            
+    //     }
+    // }
+    // let ferrari = new carro()
+    // ferrari.acelerar()
+    // ferrari.acelerar()
+    // ferrari.acelerar()
+    // ferrari.acelerar()
+    // ferrari.acelerar()
+    // ferrari.acelerar()
+    // ferrari.acelerar()
+
+
+    let carro2 = function( cor, modelo){ 
+        this.cor = cor
+        this.modelo = modelo
+        this.velocidadeAtual = 180
+        var velocidadeMaxima = 200
+
+
+        this.acelerar = function (){
+            let novaVelocidade = this.getVelocidadeAtual() + 3
+            this.setVelocidade(novaVelocidade)
+        }
+        this.getVelocidadeAtual = function(){
+            return this.velocidadeAtual
+        }
+        this.setVelocidade = function(velocidade){
+            if(velocidade <= velocidadeMaxima){
+                console.log( this.velocidadeAtual = velocidade)
+            }else{
+                this.velocidadeAtual = velocidadeMaxima
+                console.log(`Você alcançou a velocidade máxima que é ${velocidadeMaxima}`)
+            }
+            
+        }
+    }
+    let ferrari2 = new carro2()
+    ferrari2.acelerar()
+    ferrari2.acelerar()
+    ferrari2.acelerar()
+    ferrari2.acelerar()
+    ferrari2.acelerar()
+    ferrari2.acelerar()
+    ferrari2.acelerar()
+    
+    console.log( ferrari2)
+    </script>
+</head>
+<body>
+</body>
+</html>

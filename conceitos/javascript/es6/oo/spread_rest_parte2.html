@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread - Rest </title>
+    <script>
+        // Contexto Rest (Sempre ligado a uma funcao)
+        function soma(...params){
+            let resultado = 0
+            // for (let i = 0; i < params.length; i++) {
+            //     resultado += params[i]
+            // }
+            // ForEach é usado em array e é bastante conciso
+            params.forEach(valor => resultado += valor)
+            return resultado
+        }    
+        console.log(soma(208,90,2))
+        console.log(soma(78,90,2))
+        console.log(soma(50,500,50))
+
+        function multiplicacao(multiplicador, ...params){
+            let resultado = 0
+            params.forEach(valor => resultado += multiplicador * valor)
+            return resultado
+        }    
+    
+        console.log( multiplicacao(5,5,5))
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>

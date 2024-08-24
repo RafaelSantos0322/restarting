@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype chain</title>
+    <script>
+        // Como todo objeto sempre aponto (herda) de Object.__proto__ podemos alterar seu objeto pai da seguinte forma:
+        let automovel = {
+            attr1 : 'a'
+        }
+        let carroComum = {
+            __proto__ : automovel,
+            attr2 : 'b'
+        }
+        let carroEletrico = {
+            __proto__ : carroComum,
+            attr3 : 'c'
+        }
+
+        console.log(carroEletrico.attr1, carroEletrico.attr2, carroEletrico.attr3)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
