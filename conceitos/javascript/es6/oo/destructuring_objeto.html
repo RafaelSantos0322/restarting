@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+    <script>
+        let carro = {
+            modelo: 'ferrari',
+            ano: 2024,
+            dados: {
+                placa : 'x15687s',
+                chassi: 'siwer26541'
+            }
+        }
+
+        // Quando item for [] para pegar tem que ser [], quando item for {} tem que ser usado {}
+        // alem disso quando é objeto é preciso usar a chave
+        let{modelo, ano} = carro
+        console.log(modelo, ano)
+        console.log(typeof(modelo))
+        
+        // caso você queira mudar o nome da variavel é só fazer?
+        let {modelo : m, ano : a, descricao = 10} = carro
+        console.log(a, m, descricao)
+        console.log(typeof(m)) 
+
+        // Acessando objeto dentro de objeto
+        let {dados : {placa: p, chassi: cha}} = carro
+        console.log(p,cha)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

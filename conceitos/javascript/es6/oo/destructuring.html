@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+    <script>
+        //Retira valores de dentro da estrutura
+        let frutas = ['Banana', 'Maça', 'Pera', 'Melância']
+        // Dessa forma eu crio variaveis que saem do array.
+        // Pega todos os valores let [a, b, c, d] = frutas
+
+        // Dessa forma posso pular algum item indesejado
+        let [a, b, , d, e = 'abacate'] = frutas
+        console.log(a, b, d, e)
+        console.log(frutas)
+
+        // Array Multidimensionais
+        let coisas = [['Jose','Maria'], ['Pera', 'Uva', 'Maça']]
+        // Dentro array existem 2 array, eu pulo o primeiro, acesso o segundo, pulo as duas primeiras posições do array para finalmente pegar o item que desejo;
+        let [,[, , maca]] = coisas // Retornar Maça
+        console.log(maca)
+        
+        let [[, n2],] = coisas // Retorna Maria
+        console.log(n2)
+
+        let [[n1,],[,f2]] = coisas // Retorna Jose e Uva
+        console.log(n1,f2)
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
